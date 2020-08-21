@@ -12,5 +12,6 @@ class App extends Component {
     );
   }
 }
+console.log("test Commit")
 
 export default App;
