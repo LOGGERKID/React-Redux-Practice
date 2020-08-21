@@ -8,7 +8,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import storeReducer from "./store/reducer";
 
 const combinedReducer = combineReducers({
-  reducerCounter : storeReducer
+  reducerCounter: storeReducer,
 });
 
 const store = createStore(combinedReducer);
@@ -20,3 +20,5 @@ ReactDOM.render(
   document.getElementById("root")
 );
 registerServiceWorker();
+
+console.log("Git Signature Test");
