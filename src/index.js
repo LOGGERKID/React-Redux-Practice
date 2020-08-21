@@ -7,11 +7,11 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import storeReducer from "./store/reducer";
 
-const combiedReducer = combineReducers({
+const combinedReducer = combineReducers({
   reducerCounter : storeReducer
 });
 
-const store = createStore(combiedReducer);
+const store = createStore(combinedReducer);
 
 ReactDOM.render(
   <Provider store={store}>

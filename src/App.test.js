@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { createStore } from 'redux'
+import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import storeReducer from "./store/reducer";
 
-const store = createStore(storeReducer);
+const combinedReducer = combineReducers({
+  reducerCounter: storeReducer,
+});
+
+const store = createStore(combinedReducer);
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
