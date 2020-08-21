@@ -62,11 +62,19 @@ class Counter extends Component {
   }
 }
 
+<<<<<<< HEAD
 const mapStateToProps = (state) => {
   return {
     ctr: state.counter,
   };
 };
+=======
+const mapStateToProps = state => {
+    return {
+        ctr: state.reducerCounter.counter
+    }
+}
+>>>>>>> ee90747... Combine reducer
 
 const mapDispatchToProps = (dispatch) => {
   return {
