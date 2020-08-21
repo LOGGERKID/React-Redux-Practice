@@ -23,7 +23,7 @@ const storeReducer = (state = initialState, action) => {
       break;
 
     default:
-      break;
+      console.log("Could not meet any action Types")
   }
   return newState;
 };
