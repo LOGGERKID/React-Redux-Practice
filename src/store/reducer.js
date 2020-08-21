@@ -17,6 +17,11 @@ const storeReducer = (state = initialState, action) => {
     case "SUB_COUNTER":
       newState.counter -= action.value;
       break;
+
+    case "RESET":
+      newState.counter = initialState.counter;
+      break;
+
     default:
       break;
   }
