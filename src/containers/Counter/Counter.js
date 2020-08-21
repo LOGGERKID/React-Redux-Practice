@@ -75,7 +75,7 @@ const mapDispatchToProps = (dispatch) => {
     incrementWithValue: (num) => dispatch({ type: "ADD_COUNTER", value: num }),
     decWithValue: (num) => dispatch({ type: "SUB_COUNTER", value: num }),
     reset: () => dispatch({ type: "RESET" }),
-    resetWithValue: () => dispatch({ type: "RESET_WITH_VALUE", value: num }),
+    resetWithValue: (num) => dispatch({ type: "RESET_WITH_VALUE", value: num }),
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
