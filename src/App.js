@@ -12,6 +12,6 @@ class App extends Component {
     );
   }
 }
-console.log("test Commit new")
+console.log("test Commit new mint")
 
 export default App;
