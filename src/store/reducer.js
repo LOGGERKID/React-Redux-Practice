@@ -17,8 +17,13 @@ const storeReducer = (state = initialState, action) => {
     case "SUB_COUNTER":
       newState.counter -= action.value;
       break;
-    default:
+
+    case "RESET":
+      newState.counter = initialState.counter;
       break;
+
+    default:
+      console.log("Could not meet any action Types")
   }
   return newState;
 };
